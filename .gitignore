@@ -1,0 +1,9 @@
+# Réglages de PhpStorm
+.idea/
+
+# Dépendances npm (si tu installes Tailwind avec npm)
+node_modules/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
