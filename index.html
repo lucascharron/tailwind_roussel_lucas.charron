@@ -6,43 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Title</title>
+    <!-- Polices Google Fonts : Inter (texte) et Playfair Display (titres) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS généré par Tailwind (npm run dev) -->
     <link rel="stylesheet" href="dist/output.css">
 </head>
 <body class="bg-creme font-texte text-encre">
+
+    <!-- ========== HEADER ========== -->
     <header class="flex items-center justify-between px-44 py-4">
+        <!-- Logo + nom du site -->
         <div class="flex items-center gap-2">
             <img src="img_roussel/logo-roussel.svg" alt="Logo Fleurs Roussel" class="w-10 h-10">
             <a href="index.html" class="font-titre font-bold text-2xl">Fleurs Roussel</a>
         </div>
+        <!-- Navigation -->
         <div class="flex gap-6">
             <a href="#">bouquet</a>
             <a href="#">Ateliers</a>
             <a href="#">livraison</a>
             <a href="#">contact</a>
         </div>
+        <!-- Bouton commander -->
         <button class="bg-framboise rounded-full text-white text-sm px-5 py-2">commander</button>
     </header>
+
+    <!-- ========== HERO (MAIN) ========== -->
     <main class="px-44 py-20 flex items-center justify-between gap-10 ">
+        <!-- Bloc texte (gauche) -->
         <div class="w-1/2">
             <p class="font-semibold text-xs text-sauge mb-4 tracking-widest">ARTISAN FLEURISTE À BLOIS DEPUIS 1998</p>
             <h2 class="text-6xl font-titre font-bold mb-6">Des fleurs de saison, composées à la main</h2>
             <p class="text-lg mb-8">Bouquets du marché, roses anciennes et compositions champêtres : chaque semaine, Madame Roussel choisit les plus belles fleurs des producteurs de la région.</p>
+            <!-- Boutons -->
             <div class="flex gap-4">
                 <button class="bg-framboise rounded-full text-white font-semibold text-base px-5 py-2">Voir les bouquets</button>
                 <button class="border-framboise border-2 rounded-full font-semibold text-framboise text-base px-5 py-2 ">Nos ateliers</button>
             </div>
         </div>
+        <!-- Image (droite) -->
         <picture class="w-1/2">
             <img class="rounded-3xl w-full" src="img_roussel/bouquet-vase.svg" alt="Bouquet de fleurs dans un vase">
         </picture>
     </main>
+
+    <!-- ========== LES BOUQUETS DE LA SEMAINE ========== -->
     <section class="bg-white flex flex-col px-44 py-24">
         <h2 class="font-titre font-bold text-4xl mb-4">Les bouquets de la semaine</h2>
         <p class="text-base max-w-2xl">Trois compositions renouvelées chaque lundi, en taille moyenne. Livraison possible le jour même à Blois.</p>
+        <!-- Liste des cartes -->
         <div class="flex flex-row gap-8 mt-10">
+            <!-- Carte 1 : Bouquet du marché -->
             <article class="bg-creme flex-1 rounded-2xl overflow-hidden">
                 <picture>
                     <img class="w-full" src="img_roussel/bouquet-marche.svg" alt="Bouquet du marché : renoncules, marguerites et lavande">
@@ -50,12 +66,14 @@
                 <div class="p-6">
                     <h3 class="font-titre font-bold text-xl">Bouquet du marché</h3>
                     <p class="text-sm mt-2">Renoncules, marguerites et brins de lavande, au gré des arrivages.</p>
+                    <!-- Prix + bouton -->
                     <div class="flex justify-between mt-8">
                         <p class="text-bordeaux font-semibold text-lg">35 €</p>
                         <button class="font-semibold text-base text-framboise">Commander</button>
                     </div>
                 </div>
             </article>
+            <!-- Carte 2 : Roses anciennes -->
             <article class="bg-creme flex-1 rounded-2xl overflow-hidden">
                 <picture>
                     <img class="w-full" src="img_roussel/bouquet-roses.svg" alt="Bouquet de roses anciennes">
@@ -63,12 +81,14 @@
                 <div class="p-6">
                     <h3 class="font-titre font-bold text-xl">Roses anciennes</h3>
                     <p class="text-sm mt-2">Roses parfumées d'un rosiériste de Touraine, en camaïeu de framboise.</p>
+                    <!-- Prix + bouton -->
                     <div class="flex justify-between mt-8">
                         <p class="text-bordeaux font-semibold text-lg">45 €</p>
                         <button class="font-semibold text-base text-framboise">Commander</button>
                     </div>
                 </div>
             </article>
+            <!-- Carte 3 : Champêtre -->
             <article class="bg-creme flex-1 rounded-2xl overflow-hidden">
                 <picture>
                     <img class="w-full" src="img_roussel/bouquet-champetre.svg" alt="Bouquet champêtre de fleurs des champs et lavande">
@@ -76,6 +96,7 @@
                 <div class="p-6">
                     <h3 class="font-titre font-bold text-xl">Champêtre</h3>
                     <p class="text-sm mt-2">Fleurs des champs, lavande et feuillages, comme une promenade en bord de Loire.</p>
+                    <!-- Prix + bouton -->
                     <div class="flex justify-between mt-8">
                         <p class="text-bordeaux font-semibold text-lg">39 €</p>
                         <button class="font-semibold text-base text-framboise">Commander</button>
@@ -83,11 +104,13 @@
                 </div>
             </article>
         </div>
-
     </section>
+
+    <!-- ========== POURQUOI CHOISIR FLEURS ROUSSEL ========== -->
     <section>
         <h2>pourquoi choisir Fleurs Roussel ?</h2>
         <ul>
+            <!-- Argument 1 : saison -->
             <li>
                 <div>
                     <img src="img_roussel/icone-saison.svg" alt="">
@@ -95,6 +118,7 @@
                 <h2>Des fleurs de saison</h2>
                 <p>Achetées chez des producteurs du Loir-et-Cher et de Touraine.</p>
             </li>
+            <!-- Argument 2 : livraison -->
             <li>
                 <div>
                     <img src="img_roussel/icone-livraison.svg" alt="">
@@ -102,6 +126,7 @@
                 <h2>Livrées le jour même</h2>
                 <p>Livrées le jour même</p>
             </li>
+            <!-- Argument 3 : fait main -->
             <li>
                 <div>
                     <img src="img_roussel/icone-atelier.svg" alt="">
@@ -111,35 +136,44 @@
             </li>
         </ul>
     </section>
+
+    <!-- ========== ATELIER ========== -->
     <section>
         <picture>
             <img src="img_roussel/atelier.svg" alt="">
         </picture>
         <h2>Composez votre bouquet en atelier</h2>
         <p>Un samedi par mois, Madame Roussel partage ses gestes de fleuriste. Vous repartez avec votre composition.</p>
+        <!-- Infos pratiques -->
         <p>Six participants au maximum</p>
         <p>Fleurs et matériel fournis</p>
         <p>45 € par personne</p>
         <button>réserver une place</button>
     </section>
+
+    <!-- ========== FOOTER ========== -->
     <footer>
         <ul>
+            <!-- Présentation -->
             <li>
                 <h2>Fleurs Roussel</h2>
                 <p>Artisan fleuriste à Blois depuis 1998.</p>
             </li>
+            <!-- Boutique -->
             <li>
                 <h3>Boutique</h3>
                 <p>12 rue du Commerce, 41000 Blois</p>
                 <p>Du mardi au samedi, 9 h 30 à 19 h</p>
                 <p>02 54 00 00 00</p>
             </li>
+            <!-- Liens utiles -->
             <li>
                 <h3>Liens utiles</h3>
                 <a href="#">livraison</a>
                 <a href="#">mention légale</a>
             </li>
         </ul>
+        <!-- Copyright -->
         <p>© Fleurs Roussel</p>
     </footer>
 </body>
