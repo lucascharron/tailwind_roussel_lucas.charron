@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Title</title>
+    <title>Fleurs Roussel, artisan fleuriste à Blois</title>
     <!-- Polices Google Fonts : Inter (texte) et Playfair Display (titres) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,40 +20,41 @@
         <!-- Logo + nom du site -->
         <div class="flex items-center gap-2">
             <img src="img_roussel/logo-roussel.svg" alt="Logo Fleurs Roussel" class="w-10 h-10">
-            <a href="index.html" class="font-titre font-bold text-2xl">Fleurs Roussel</a>
+            <a href="index.html" class="font-titre font-bold text-2xl hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Fleurs Roussel</a>
         </div>
         <!-- Navigation -->
-        <div class="flex gap-6">
-            <a href="#">bouquet</a>
-            <a href="#">Ateliers</a>
-            <a href="#">livraison</a>
-            <a href="#">contact</a>
-        </div>
+        <nav class="flex gap-6">
+            <a href="#bouquets" class="hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Bouquets</a>
+            <a href="#atelier" class="hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Ateliers</a>
+            <a href="#" class="hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Livraison</a>
+            <a href="#contact" class="hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Contact</a>
+        </nav>
         <!-- Bouton commander -->
-        <button class="bg-framboise rounded-full text-white text-sm px-5 py-2">commander</button>
+        <button class="bg-framboise rounded-full text-white text-sm px-5 py-2 hover:bg-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">commander</button>
     </header>
 
     <!-- ========== HERO (MAIN) ========== -->
-    <main class="px-44 py-20 flex items-center justify-between gap-10 ">
+<main>
+    <section class="px-44 py-20 flex items-center justify-between gap-10 ">
         <!-- Bloc texte (gauche) -->
         <div class="w-1/2">
             <p class="font-semibold text-xs text-sauge mb-4 tracking-widest">ARTISAN FLEURISTE À BLOIS DEPUIS 1998</p>
-            <h2 class="text-6xl font-titre font-bold mb-6">Des fleurs de saison, composées à la main</h2>
+            <h1 class="text-6xl font-titre font-bold mb-6">Des fleurs de saison, composées à la main</h1>
             <p class="text-lg mb-8">Bouquets du marché, roses anciennes et compositions champêtres : chaque semaine, Madame Roussel choisit les plus belles fleurs des producteurs de la région.</p>
             <!-- Boutons -->
             <div class="flex gap-4">
-                <button class="bg-framboise rounded-full text-white font-semibold text-base px-5 py-2">Voir les bouquets</button>
-                <button class="border-framboise border-2 rounded-full font-semibold text-framboise text-base px-5 py-2 ">Nos ateliers</button>
+                <button class="bg-framboise rounded-full text-white font-semibold text-base px-5 py-2 hover:bg-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Voir les bouquets</button>
+                <button class="border-framboise border-2 rounded-full font-semibold text-framboise text-base px-5 py-2 hover:bg-framboise hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Nos ateliers</button>
             </div>
         </div>
         <!-- Image (droite) -->
         <picture class="w-1/2">
             <img class="rounded-3xl w-full" src="img_roussel/bouquet-vase.svg" alt="Bouquet de fleurs dans un vase">
         </picture>
-    </main>
+    </section>
 
     <!-- ========== LES BOUQUETS DE LA SEMAINE ========== -->
-    <section class="bg-white flex flex-col px-44 py-24">
+    <section id="bouquets" class="bg-white flex flex-col px-44 py-24">
         <h2 class="font-titre font-bold text-4xl mb-4">Les bouquets de la semaine</h2>
         <p class="text-base max-w-2xl">Trois compositions renouvelées chaque lundi, en taille moyenne. Livraison possible le jour même à Blois.</p>
         <!-- Liste des cartes -->
@@ -69,7 +70,7 @@
                     <!-- Prix + bouton -->
                     <div class="flex justify-between mt-8">
                         <p class="text-bordeaux font-semibold text-lg">35 €</p>
-                        <button class="font-semibold text-base text-framboise">Commander</button>
+                        <button class="font-semibold text-base text-framboise hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Commander</button>
                     </div>
                 </div>
             </article>
@@ -84,7 +85,7 @@
                     <!-- Prix + bouton -->
                     <div class="flex justify-between mt-8">
                         <p class="text-bordeaux font-semibold text-lg">45 €</p>
-                        <button class="font-semibold text-base text-framboise">Commander</button>
+                        <button class="font-semibold text-base text-framboise hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Commander</button>
                     </div>
                 </div>
             </article>
@@ -99,7 +100,7 @@
                     <!-- Prix + bouton -->
                     <div class="flex justify-between mt-8">
                         <p class="text-bordeaux font-semibold text-lg">39 €</p>
-                        <button class="font-semibold text-base text-framboise">Commander</button>
+                        <button class="font-semibold text-base text-framboise hover:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-framboise">Commander</button>
                     </div>
                 </div>
             </article>
@@ -138,43 +139,52 @@
     </section>
 
     <!-- ========== ATELIER ========== -->
-    <section>
-        <picture>
-            <img src="img_roussel/atelier.svg" alt="">
+    <section id="atelier" class="bg-sauge flex flex-row-reverse items-center text-white px-44 py-24 gap-10">
+        <picture class="flex-1">
+            <img class="rounded-3xl w-full" src="img_roussel/atelier.svg" alt="">
         </picture>
-        <h2>Composez votre bouquet en atelier</h2>
-        <p>Un samedi par mois, Madame Roussel partage ses gestes de fleuriste. Vous repartez avec votre composition.</p>
-        <!-- Infos pratiques -->
-        <p>Six participants au maximum</p>
-        <p>Fleurs et matériel fournis</p>
-        <p>45 € par personne</p>
-        <button>réserver une place</button>
+        <div class="flex-1">
+            <h2 class="font-titre font-bold text-4xl mb-4">Composez votre bouquet en atelier</h2>
+            <p class="mb-6">Un samedi par mois, Madame Roussel partage ses gestes de fleuriste. Vous repartez avec votre composition.</p>
+            <!-- Infos pratiques -->
+            <ul class="flex flex-col gap-2">
+                <li>Six participants au maximum</li>
+                <li>Fleurs et matériel fournis</li>
+                <li>45 € par personne</li>
+            </ul>
+            <button class="bg-white rounded-full text-sauge font-semibold text-base px-6 py-3 mt-8 hover:bg-creme focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Réserver une place</button>
+        </div>
     </section>
+</main>
 
     <!-- ========== FOOTER ========== -->
-    <footer>
-        <ul>
+    <footer id="contact" class="bg-encre text-creme  text-sm">
+        <ul class="grid grid-cols-3 gap-10 py-12 px-44">
             <!-- Présentation -->
-            <li>
-                <h2>Fleurs Roussel</h2>
+            <li class="flex flex-col gap-2">
+                <p class="font-titre text-2xl font-bold">Fleurs Roussel</p>
                 <p>Artisan fleuriste à Blois depuis 1998.</p>
             </li>
             <!-- Boutique -->
             <li>
-                <h3>Boutique</h3>
-                <p>12 rue du Commerce, 41000 Blois</p>
-                <p>Du mardi au samedi, 9 h 30 à 19 h</p>
-                <p>02 54 00 00 00</p>
+                <address class="not-italic flex flex-col gap-0.5">
+                    <h2 class="font-semibold">Boutique</h2>
+                    <p>12 rue du Commerce, 41000 Blois</p>
+                    <p>Du mardi au samedi, 9 h 30 à 19 h</p>
+                    <p>02 54 00 00 00</p>
+                </address>
             </li>
             <!-- Liens utiles -->
             <li>
-                <h3>Liens utiles</h3>
-                <a href="#">livraison</a>
-                <a href="#">mention légale</a>
+                <nav class="flex flex-col gap-1" aria-label="Liens utiles">
+                    <h2 class="font-semibold">Liens utiles</h2>
+                    <a href="#" class="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-creme">Livraison</a>
+                    <a href="#" class="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-creme">Mentions légales</a>
+                </nav>
             </li>
         </ul>
         <!-- Copyright -->
-        <p>© Fleurs Roussel</p>
+        <p class="border-t border-creme p-4 text-xs text-center">© Fleurs Roussel</p>
     </footer>
 </body>
 </html>
